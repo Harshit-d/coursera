@@ -3,8 +3,74 @@
   <head>
     <meta charset="utf-8">
     <title>Course era assignment </title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    h1{
+    margin-bottom: 15px;
+    }
+    p{
+      border:1pc solid black;
+      background-color:#A52A2A;
+      width:90%;
+      height: 150px;
+      margin-right: auto;
+      margin-left:auto;
+      font-family: Helvetica;
+      color:white;
+    }
+    
+    .row{
+      width:100%
+    }
+    
+    @media(min-width: 992px){
+      .col-lg-4{
+        float:left;
+        border:1px solid green;
+         }
+      .col-lg-4{
+       width: 33%
+       }
+    }
+    @media(min-width: 768px and max-width:991px ){
+      .col-md-6, .col-md-12{
+        float:left;
+        border:1px solid green;
+         }
+      .col-md-6{
+       width: 50%
+       }
+      .col-md-12{
+       width: 100%
+       }
+    }
+     @media(max-width: 767px){
+      .col-sm-12{
+        float:left;
+        border:1px solid green;
+         }
+      .col-lg-12{
+       width: 100%
+       }
+    }
+    </style>
+    
   </head>
   <body>
-    lets see how this works
+    <h1> Our menu </h>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <p>Item 1</p>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <p>Item 2</p>
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12">
+        <p>Item 3</p>
+      </div>
+      
+      
   </body>
 </html>
